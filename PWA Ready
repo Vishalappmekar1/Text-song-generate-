@@ -1,0 +1,14 @@
+{
+    "name": "AI Song Generator",
+    "short_name": "SongGen",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#1e1e2f",
+    "description": "AI Based Song Generator",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "theme_color": "#1e1e2f"
+}

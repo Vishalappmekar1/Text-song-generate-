@@ -1,47 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AI Song Generator</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="manifest" href="manifest.json"/>
+    <meta charset="UTF-8">
+    <title>AI Song Generator with HuggingFace</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="toggle-mode">
-        <button id="toggleMode">🌙 Toggle Dark/Light Mode</button>
-    </div>
-
-    <h1 class="welcome">🎵 AI Song Generator 🎵</h1>
-
+    <h1>🎵 Real AI Song Generator (HuggingFace)</h1>
     <div class="container">
-        <input type="text" id="songPrompt" placeholder="Type or Speak your song idea..." />
-        <button id="voiceBtn">🎙️ Speak</button>
-        <select id="songSelect">
-            <option>Dummy Song 1</option>
-            <option>Dummy Song 2</option>
-            <option>Dummy Song 3</option>
-        </select>
-        <button id="generateBtn">Generate Song</button>
-
-        <div class="loading" id="loading">Generating... <span id="progress">0%</span></div>
-
-        <div class="result" id="result">
-            <h2>Your AI Song</h2>
-            <img id="songCover" src="https://via.placeholder.com/200x200.png?text=Song+Cover" alt="Song Cover"/>
-            <p id="songTitle">Not Generated</p>
-            <p id="songLyrics">Lyrics will appear here...</p>
-            <audio id="audioPlayer" controls>
-                <source src="dummy_song.mp3" type="audio/mpeg">
-            </audio>
-            <button id="downloadBtn">⬇️ Download Song</button>
-            <button id="saveBtn">💾 Save to My Songs</button>
-        </div>
-
-        <div class="mysongs" id="mySongsList"></div>
+        <input type="text" id="promptInput" placeholder="Type your song prompt (e.g., romantic piano)" />
+        <button id="generateBtn">Generate AI Song</button>
+        <p id="status"></p>
+        <audio id="audioPlayer" controls></audio>
     </div>
-
-    <div class="toast" id="toast">Saved!</div>
 
     <script src="script.js"></script>
 </body>
